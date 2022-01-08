@@ -237,36 +237,28 @@ valf3.setText(String.valueOf(result));
 
 
 b4.setOnMouseClicked((MouseEvent ex) -> {
-    String Num1 = tf4.getText();
-    String Num2 = tf8.getText();
+
+    String num1 = tf4.getText();
+    String num2 = tf8.getText();
     
     
-    if(Num1.matches("^\\d+(\\.\\d+)?") && Num2.matches("^\\d+(\\.\\d+)?")) {
+    if(num1.matches("^\\d+(\\.\\d+)?") && num2.matches("^\\d+(\\.\\d+)?")) {
         
         
-        try {
-            
-            double Num1f = Double.parseDouble(Num1);
-            double Num2f = Double.parseDouble(Num2);
-         double     result =(Num2f / Num1f);
+        double num1f = Double.parseDouble(num1);
+        double num2f = Double.parseDouble(num2);
+        double result = num2f / num1f;
         
-         
-         if (Num1f==0)  {   
-             System.out.println("You can't do that !");
-           }
-        
-         
-         valf4.setText(String.valueOf(result));
-        }
-        catch (ArithmeticException e) {
-            System.out.println("cdcd");
+        if (Double.isInfinite(result)) { 
             valf4.setText("You can't do that !");
+        } else {
+            valf4.setText(String.valueOf(result));
         }
     } else {
         
     }
-   });
 
+});
 
 
 
