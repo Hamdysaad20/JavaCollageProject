@@ -173,7 +173,7 @@ if(Num1.matches("^\\d+(\\.\\d+)?") && Num2.matches("^\\d+(\\.\\d+)?")) {
 valf.setText(String.valueOf(result));
    
 } else {
- 
+ valf.setText("Put A Number Only");
 }
     
 });
@@ -195,7 +195,7 @@ if(Num1.matches("^\\d+(\\.\\d+)?") && Num2.matches("^\\d+(\\.\\d+)?")) {
        double result =Num2f-Num1f;
 valf2.setText(String.valueOf(result));
 } else {
- 
+ valf2.setText("Put A Number Only");
 }
     
 });
@@ -220,7 +220,7 @@ if(Num1.matches("^\\d+(\\.\\d+)?") && Num2.matches("^\\d+(\\.\\d+)?")) {
            double result =Num1f*Num2f;
 valf3.setText(String.valueOf(result));
 } else {
- 
+ valf3.setText("Put A Number Only");
 }
     
 });
@@ -255,7 +255,7 @@ b4.setOnMouseClicked((MouseEvent ex) -> {
             valf4.setText(String.valueOf(result));
         }
     } else {
-        
+        valf4.setText("Put A Number Only");
     }
 
 });
